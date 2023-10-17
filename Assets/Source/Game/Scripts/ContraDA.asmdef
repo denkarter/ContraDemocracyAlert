@@ -1,0 +1,16 @@
+{
+    "name": "ContraDA",
+    "rootNamespace": "ContraDA",
+    "references": [
+        "GUID:0cf7c7ea016d94b768734b1580fceb28"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
