@@ -1,3 +1,4 @@
+using System;
 using UnityEngine;
 
 namespace Movement.Source.Modules.Movement.Scripts
@@ -15,7 +16,7 @@ namespace Movement.Source.Modules.Movement.Scripts
 
         internal void Move(Vector2 direction)
         {
-            _rigidbody.MovePosition(direction * _speed);
+            _rigidbody.velocity = direction * _speed;
         }
     }
 }

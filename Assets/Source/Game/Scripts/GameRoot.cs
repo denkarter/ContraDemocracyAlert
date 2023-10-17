@@ -6,11 +6,14 @@ namespace ContraDA.Source.Game.Scripts
 {
     public class GameRoot : MonoBehaviour
     {
-        [SerializeField] private MovementInput _movementInput;
+        [SerializeField] private Transform _playerInitialPoint;
 
         private void Start()
         {
-            _movementInput.Activate();
+            var playerPrefab = Resources.Load<GameObject>("Prefabs/Player/Player");
+            var player =  Instantiate(playerPrefab, _playerInitialPoint.position, Quaternion.identity);
+            var movementInput = player.GetComponent<MovementInput>();
+            movementInput.Activate();
         }
     }
 }

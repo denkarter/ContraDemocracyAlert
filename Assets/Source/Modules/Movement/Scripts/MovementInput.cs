@@ -15,8 +15,8 @@ namespace Movement.Source.Modules.Movement.Scripts
             if (_active == false)
                 return;
 
-            Vector2 direction = new Vector2(Input.GetAxisRaw(_horizontal), Input.GetAxisRaw(_vertical));
-            _characterMovement.Move(direction);
+            Vector2 velocity = (new Vector2(Input.GetAxis(_horizontal), Input.GetAxis(_vertical))) * Time.fixedDeltaTime;
+            _characterMovement.Move(velocity);
         }
 
         public void Activate()
