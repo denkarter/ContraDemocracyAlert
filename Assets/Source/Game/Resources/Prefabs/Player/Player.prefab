@@ -2748,9 +2748,10 @@ GameObject:
   - component: {fileID: 408884}
   - component: {fileID: 9573204}
   - component: {fileID: 7664428492720798523}
-  - component: {fileID: 4540300128580260229}
-  - component: {fileID: 8958769059404960283}
-  - component: {fileID: 2959918432304111429}
+  - component: {fileID: 5860044229030659360}
+  - component: {fileID: 1493005787778550701}
+  - component: {fileID: 1794979886192103854}
+  - component: {fileID: 257206824163714431}
   m_Layer: 12
   m_Name: Player
   m_TagString: Untagged
@@ -2844,7 +2845,7 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 88
   m_CollisionDetection: 0
---- !u!114 &4540300128580260229
+--- !u!114 &5860044229030659360
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2856,8 +2857,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3eaae54608e14f6ca7c7543fa24287df, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _speed: 40
---- !u!114 &8958769059404960283
+  _speed: 15
+--- !u!114 &1493005787778550701
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2869,8 +2870,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c7b996a9b51a48129dcbec0101370422, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _characterMovement: {fileID: 4540300128580260229}
---- !u!136 &2959918432304111429
+  _characterMovement: {fileID: 5860044229030659360}
+  Direction: {x: 0, y: 0}
+--- !u!136 &1794979886192103854
 CapsuleCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -2880,10 +2882,24 @@ CapsuleCollider:
   m_Material: {fileID: 0}
   m_IsTrigger: 0
   m_Enabled: 1
-  m_Radius: 0.4236349
-  m_Height: 2.5355716
+  m_Radius: 0.4
+  m_Height: 2.5
   m_Direction: 1
-  m_Center: {x: -0.0012384653, y: 1.2630811, z: 0}
+  m_Center: {x: 0, y: 1.25, z: 0}
+--- !u!114 &257206824163714431
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 141386}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 306d61874ffd646668d4c92b5e5eaf95, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _movement: {fileID: 1493005787778550701}
+  Direction: {x: 0, y: 0}
 --- !u!1 &141842
 GameObject:
   m_ObjectHideFlags: 0

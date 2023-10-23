@@ -11,9 +11,9 @@ namespace ContraDA.Source.Game.Scripts
         private void Start()
         {
             var playerPrefab = Resources.Load<GameObject>("Prefabs/Player/Player");
-            var player =  Instantiate(playerPrefab, _playerInitialPoint.position, Quaternion.identity);
-            var movementInput = player.GetComponent<MovementInput>();
-            movementInput.Activate();
+            var player =  Instantiate(playerPrefab, _playerInitialPoint.position, playerPrefab.transform.rotation);
+            var playerInput = player.GetComponent<PlayerInput>();
+            playerInput.Activate();
         }
     }
 }

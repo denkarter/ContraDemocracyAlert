@@ -1,9 +1,7 @@
 {
-    "name": "ContraDA",
-    "rootNamespace": "ContraDA",
+    "name": "Input",
+    "rootNamespace": "Input",
     "references": [
-        "GUID:0cf7c7ea016d94b768734b1580fceb28",
-        "GUID:a7794daa1f4764da8a820adcb35ebd1f",
         "GUID:75469ad4d38634e559750d17036d5f7c"
     ],
     "includePlatforms": [],
