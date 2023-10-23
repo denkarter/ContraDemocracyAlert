@@ -2871,7 +2871,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _characterMovement: {fileID: 5860044229030659360}
-  Direction: {x: 0, y: 0}
 --- !u!136 &1794979886192103854
 CapsuleCollider:
   m_ObjectHideFlags: 0
@@ -2898,8 +2897,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 306d61874ffd646668d4c92b5e5eaf95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _movement: {fileID: 1493005787778550701}
-  Direction: {x: 0, y: 0}
 --- !u!1 &141842
 GameObject:
   m_ObjectHideFlags: 0

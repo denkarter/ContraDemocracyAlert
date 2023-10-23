@@ -8,6 +8,7 @@ namespace Movement.Source.Modules.Movement.Scripts
 
         public void Move(Vector2 movementDirection)
         {
+            Debug.Log(movementDirection);
             _characterMovement.Move((movementDirection));
         }
     }

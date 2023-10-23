@@ -16,8 +16,7 @@ namespace ContraDA.Source.Game.Scripts
 
         private void Start()
         {
-            _movement = GetComponentInParent<MovementRoot>();
-            Debug.Log(_movement.name);
+            _movement = GetComponent<MovementRoot>();
         }
 
         private void FixedUpdate()
@@ -25,8 +24,7 @@ namespace ContraDA.Source.Game.Scripts
             if (_active == false)
                 return;
             Vector2 direction = _inputActions.HumanoidLand.Move.ReadValue<Vector2>();
-            _movement.Move(direction);
-            //Debug.Log();
+            _movement.Move(direction * Time.fixedDeltaTime);
         }
 
         public void Activate()
